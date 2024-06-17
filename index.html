@@ -5,69 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>renato</title>
 
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/grid.css">
+    <link rel="stylesheet" href="src/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1><strong>Renato Carlos</strong></h1>
-        <p>Desenvolvedor Web</p>
+    <header class="header">
+        <div class="container">
+            <h1>Renato Carlos</h1>
+            <p>Desenvolvedor</p>
+        </div>
     </header>
 
-    <main>
-        <section id="sobre">
-            <strong><h2>Renato,</h2></strong>
-            <p>
-                Servidor público do municipio de Serra Talhada, estado de Pernambuco<br>
-                O filho mais velho do senhor Carlos e Cicera<br>
-                Pai de Mário Giusepp, Gianluca, GianLuigi e Ayla<br>
-                Estudante da Faculdade Focus e ex-aluno da UAST/UFRPE<br>
-            </p>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>GNU/Linux</li>
-            </ul>
-        </section>
-
-        <section class="projetos" id="projetos">
-            <h2>Projetos</h2>
-            <div class="projeto">
-                <img src="./src/img/_887ea696-9f8b-4f0e-a0ea-e79ca081daf7.jpeg" alt="Projeto 1">
-                <h3>Projeto 1</h3>
-                <p>Descrição breve do projeto 1.</p>
-                <a href="#">Ver Projeto</a>
-            </div>
-            <div class="projeto">
-                <img src="./src/img/_7b32d339-e890-4d86-8922-e89c69b1be84.jpeg" alt="Projeto 2">
-                <h3>Projeto 2</h3>
-                <p>Descrição breve do projeto 2.</p>
-                <a href="#">Ver Projeto</a>
+    <main class="main">
+        <section class="introducao">
+            <div class="container">
+                <h2>Bíblia Sagrada</h2>
+                <blockquote class="quote-biblia">
+                    <p>
+                        "Porque Deus tanto amou o mundo que deu o seu Filho Unigênito,<br> para que todo o que nele crer não pereça, mas tenha a vida eterna."
+                    </p>
+                    <cite>João 3:16</cite>
+                </blockquote>
             </div>
         </section>
 
-        <section id="contato">
-            <h2>Contato - Vamos trabalhar juntos?</h2>
-            <p>Email: petrorenato@gmail.com</p>
-            <p>Celular: (87) 99942-8788</p>
-            <p><a href="https://www.linkedin.com/in/renato-carlos-da-silva-45879b312">LinkedIn:</a></p>
-            <p><a href="https://github.com/renato-uast87">GitHub:</a></p>
+        <section class="habilidades">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <ul class="lista_habilidades">
+                    <li class="grid-3">
+                        <img src="src/img/habilidades/003-html-51.png" alt="Linguagem De Marcação HTML">
+                        <h3>HTML</h3>
+                    </li>
+                    <li class="grid-3">
+                        <img src="src/img/habilidades/002-css-31.png" alt="Linguagem Estilos CSS">
+                        <h3>CSS</h3>
+                    </li>
+                    <li class="grid-3">
+                        <img src="src/img/habilidades/001-script-java1.png" alt="Linguagem de Animação JavaScript">
+                        <h3>JavaScript</h3>
+                    </li>
+                    <li class="grid-3">
+                        <img src="src/img/habilidades/icons8-python-500.png" alt="Linguagem de Scripts Python">
+                        <h3>Python</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projetos">
+            <div class="container">
+                <h2>Projetos</h2>
+                <div class="grid-8 projeto">
+                    <img src="./src/img/_887ea696-9f8b-4f0e-a0ea-e79ca081daf7.jpeg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto 1.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+                <div class="grid-8 projeto">
+                    <img src="./src/img/_7b32d339-e890-4d86-8922-e89c69b1be84.jpeg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto 2.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="container">
+                <h2>Renato,</h2>
+                <div class="grid-16">
+                    <p>
+                        Servidor público do municipio de Serra Talhada, estado de Pernambuco<br>
+                        O filho mais velho do senhor Carlos e Cicera<br>
+                        Pai de Mário Giusepp, Gianluca, GianLuigi e Ayla<br>
+                        Estudante da Faculdade Focus e ex-aluno da UAST/UFRPE<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div class="container">
+                <div class="grid-16">
+                    <h2>Contato - Vamos trabalhar juntos?</h2>
+                    <p>Email:<address>petrorenato@gmail.com</address></p>
+                    <p>Celular: (87) 99942-8788</p>
+                    <p><a href="https://www.linkedin.com/in/renato-carlos-da-silva-45879b312">LinkedIn:</a></p>
+                    <p><a href="https://github.com/renato-uast87">GitHub:</a></p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2023 renato</p>
+        <div  class="container">
+            <p>© 2023 renato</p>
+        </div>
     </footer>
 
-    <script src="./src/js.js"></script>
+    <script src="./src/js/js.js"></script>
 </body>
 </html>
