@@ -100,7 +100,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1rem;
-    background-color: var(--text-color);
+    background-color: var(--bg-other1);
 }
 
 .nav-responsiva a,
