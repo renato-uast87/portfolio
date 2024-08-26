@@ -1,5 +1,6 @@
 <?php
 
+	$para      = "petrorenato@gmail.com"; // E-mail Destino
 
     $nome      = addcslashes($_POST['nome']);
     $email     = addcslashes($_POST['email']);
@@ -7,17 +8,14 @@
     $assunto   = addcslashes($_POST['assunto']);
     $mensagem  = addcslashes($_POST['mensagem']);
 
-    $para      = "petrorenato@gmail.com"; // E-mail Destino
     $local     = "Meu Site";
 
-    $corpo     = "Nome: ".$nome."\n"."Email: ".$email."\n"."Telefone: ".$telefone."\n"."Assunto: ".$assunto."\n"."Mensagem: ".$mensagem;
+    $corpo     = "Nome: ".$nome."\n"."Email: ".$email."\n"."Telefone: ".$telefone."\n"."Mensagem: ".$mensagem;
 
-    $cabeca = "From: meusite@renato-uast87.github.io/portfolio/index.html"
-
-    if (mail($para, $assunto, $corpo, $cabeca)) {
-        echo("E-mail enviado com sucesso!!!");
+    if (mail($para, $assunto, $corpo)) {
+        header('Location: index.html?mensagem=Mensagem+enviada+com+sucesso!');
     } else {
-        echo("Falha!!!");
+        header('Location: index.html?mensagem=Erro+ao+enviar+a+mensagem.');
     }
 
 ?>
